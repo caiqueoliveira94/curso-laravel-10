@@ -17,6 +17,8 @@
 
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
+    <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
+
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="{{ asset('icones/apple-touch-icon.png') }}" sizes="180x180">
     <link rel="icon" href="{{ asset('icones/favicon-32x32.png') }}" sizes="32x32" type="image/png">
@@ -125,6 +127,9 @@
     {{-- BlockUI loading --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.js"></script>
     <script src="/js/app.js"></script>
+
+    <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+    {!! Toastr::message() !!}
 </body>
 
 </html>

@@ -17,9 +17,9 @@ function deleteRegistroPaginacao(rotaUrl, idDoRegistro) {
       .done(function (data) {
         $.unblockUI();
         if (data.success == true) {
-            window.location.reload();
+          window.location.reload();
         } else {
-            alert('Não foi possível excluir.')
+          alert("Não foi possível excluir.");
         }
       })
       .fail(function (data) {
@@ -28,3 +28,5 @@ function deleteRegistroPaginacao(rotaUrl, idDoRegistro) {
       });
   }
 }
+
+$("#mascara_valor").mask("#.##0,00", { reverse: true });
