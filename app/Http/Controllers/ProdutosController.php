@@ -50,6 +50,7 @@ class ProdutosController extends Controller
 
         return view('pages.produtos.create');
     }
+
     public function atualizarProduto(FormRequestProduto $request, $id)
     {
 
